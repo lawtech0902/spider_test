@@ -13,7 +13,6 @@ from pathlib import Path
 from urllib import parse
 from urllib import error
 from urllib import request
-from datetime import datetime
 from http.client import IncompleteRead
 from socket import timeout as socket_timeout
 
@@ -105,6 +104,3 @@ if __name__ == '__main__':
                 continue
         # 一次请求处理完毕，将偏移量加 20，继续获取新的 20 篇文章。
         offset += 20
-
-
-
